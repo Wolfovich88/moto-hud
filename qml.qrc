@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sources/main.qml</file>
+        <file>sources/InfoBlock.qml</file>
+        <file>sources/Resources.js</file>
+        <file>resources/Helmet-Regular.ttf</file>
+        <file>resources/helmet-mask.png</file>
+        <file>resources/harman-moto.png</file>
+        <file>sources/Rpm.qml</file>
+        <file>resources/speed_icon.png</file>
+        <file>resources/charge_icon.png</file>
+        <file>resources/temperature_icon.png</file>
+        <file>sources/Utils.js</file>
+        <file>resources/overlay-jarvis.png</file>
+        <file>resources/arrow-left.png</file>
+        <file>resources/arrow-c.png</file>
+    </qresource>
+</RCC>
