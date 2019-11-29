@@ -8,14 +8,14 @@ Grid {
     property int energyLevel: 0
     property int temperature: 18
 
-    columns: 2
+    columns: 1
     spacing: 16
 
-    Image {
-        width: Res.iconSize
-        height: Res.iconSize
-        source: "qrc:/resources/speed_icon.png"
-    }
+//    Image {
+//        width: Res.iconSize
+//        height: Res.iconSize
+//        source: "qrc:/resources/speed_icon.png"
+//    }
     Text {
         font.pixelSize: 40
         font.bold: true
@@ -24,11 +24,11 @@ Grid {
         font.family: helmetFont.name
     }
 
-    Image {
-        width: Res.iconSize
-        height: Res.iconSize
-        source: "qrc:/resources/charge_icon.png"
-    }
+//    Image {
+//        width: Res.iconSize
+//        height: Res.iconSize
+//        source: "qrc:/resources/charge_icon.png"
+//    }
     Text {
         font.pixelSize: 40
         font.bold: true
@@ -37,11 +37,11 @@ Grid {
         font.family: helmetFont.name
     }
 
-    Image {
-        width: Res.iconSize
-        height: Res.iconSize
-        source: "qrc:/resources/temperature_icon.png"
-    }
+//    Image {
+//        width: Res.iconSize
+//        height: Res.iconSize
+//        source: "qrc:/resources/temperature_icon.png"
+//    }
     Text {
         font.pixelSize: 40
         font.bold: true
