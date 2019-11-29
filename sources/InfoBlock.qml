@@ -20,7 +20,7 @@ Grid {
         font.pixelSize: 40
         font.bold: true
         color: Res.contentColor
-        text: qsTr("%1 km/h").arg(_hudController.rpmValue)
+        text: qsTr("%1 rpm").arg(velocity)
         font.family: helmetFont.name
     }
 
