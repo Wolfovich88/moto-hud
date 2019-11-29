@@ -58,7 +58,7 @@ Window {
 
     CircularGauge {
         id: speedometer
-        value: valueSource.kph
+        value: _hudController.rpmValue // valueSource.kph
         anchors {
             left: parent.left
             bottom: parent.bottom
