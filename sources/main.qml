@@ -1,6 +1,9 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtMultimedia 5.12
+import QtQuick.Controls 1.4
+import QtQuick.Controls.Styles 1.4
+import QtQuick.Extras 1.4
 
 import "Utils.js" as Utils
 
@@ -24,7 +27,7 @@ Window {
 
     MediaPlayer {
         id: player
-        source: "file:///Projects/Hackaton/moto-hud/video_Trim.mp4"
+        source: "file:///Projects/Hackaton/video_Trim.mp4"
         autoPlay: true
     }
 
@@ -49,11 +52,39 @@ Window {
 //        value: root.value
 //    }
 
+    ValueSource {
+        id: valueSource
+    }
+
+    CircularGauge {
+        id: speedometer
+        value: valueSource.kph
+        anchors {
+            left: parent.left
+            bottom: parent.bottom
+            leftMargin: 100
+            bottomMargin: 150
+        }
+
+        maximumValue: 280
+        // We set the width to the height, because the height will always be
+        // the more limited factor. Also, all circular controls letterbox
+        // their contents to ensure that they remain circular. However, we
+        // don't want to extra space on the left and right of our gauges,
+        // because they're laid out horizontally, and that would create
+        // large horizontal gaps between gauges on wide screens.
+        width: 300
+        height: 300
+
+        style: DashboardGaugeStyle {
+        }
+    }
+
     InfoBlock {
         x: 920
         y: 388
 
-        velocity: Utils.mix(10, 110, root.value)
+        velocity: root.value * 10000
         energyLevel: 45
         temperature: Utils.mix(93, 95, root.value)
     }
@@ -108,7 +139,7 @@ Window {
             PathCurve { x: 325; y: 25 }
             PathCurve { x: 400; y: 100 }
         }
-        duration: 50000
+        duration: 100000
         pathColor: Qt.rgba(.4,.6,.8)
         circleColor: "red"
         circleBorderColor: Qt.rgba(.4,.6,.8)

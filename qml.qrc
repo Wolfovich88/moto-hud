@@ -14,5 +14,8 @@
         <file>resources/overlay-jarvis.png</file>
         <file>resources/arrow-left.png</file>
         <file>resources/arrow-c.png</file>
+        <file>sources/DashboardGaugeStyle.qml</file>
+        <file>sources/PathDrawer.qml</file>
+        <file>sources/ValueSource.qml</file>
     </qresource>
 </RCC>
