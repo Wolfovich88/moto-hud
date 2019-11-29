@@ -27,7 +27,7 @@ Window {
 
     MediaPlayer {
         id: player
-        source: "file:///Projects/Hackaton/video_Trim.mp4"
+        source: "file:///C:/Users/OLyubimov/WORK/video_Trim.mp4"
         autoPlay: true
     }
 
@@ -92,13 +92,12 @@ Window {
     Row {
         anchors {
             centerIn: parent
-            verticalCenterOffset: -80
         }
         spacing: 20
 
         Image {
             id: arrowLeft
-            source: "qrc:/resources/arrow-left.png"
+            source: "qrc:/resources/arrow.png"
             opacity: 0
         }
         Image {
@@ -109,7 +108,7 @@ Window {
         Image {
             id: arrowRight
             mirror: true
-            source: "qrc:/resources/arrow-left.png"
+            source: "qrc:/resources/arrow.png"
             opacity: 0
         }
     }

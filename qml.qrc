@@ -17,5 +17,6 @@
         <file>sources/DashboardGaugeStyle.qml</file>
         <file>sources/PathDrawer.qml</file>
         <file>sources/ValueSource.qml</file>
+        <file>resources/arrow.png</file>
     </qresource>
 </RCC>
